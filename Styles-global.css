@@ -11,6 +11,7 @@
 :root {
   --color--black: #000;
   --color--white: #fff;
+  --color--white--1: #eee;
   --color--gray: #bbb;
   --color--gray--1: #999;
   --color--red: #C80000;
@@ -115,7 +116,7 @@ ul {
   background-color: var(--color--black);
   display: flex;
   justify-content: space-between;
-  padding: 2rem 5rem 5rem 5rem;
+  padding: 2rem 5rem 4rem 5rem;
 }
 
 .footer__content {

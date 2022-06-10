@@ -1,1 +1,19 @@
 @import '/Styles-global.css';
+
+.login__wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	background-color: var(--color--white--1);
+}
+
+.login__content {
+	width: 50rem;
+	height: 40rem;
+	box-shadow: 0rem 0rem .3rem var(--color--black);
+	border-radius: .3rem;
+	align-self: center;
+	padding: 4rem;
+	
+}

@@ -7,14 +7,20 @@
   <title>Login</title>
   <link rel="stylesheet" href="./login-styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script>
-    $(function(){
-      $("#teste").load("../main/main.html"); 
-    });
-  </script>
 </head>
 <body>
-  <h1>login</h1>
-  <div id="teste"></div>
+  <main class="login__wrap">
+    <div id="header"></div>
+    <section class="login__content">
+      <h2 class="login__second">Login</h2>
+      <div class="login__box">
+        <input type="text" class="login__input" placeholder="Digite seu e-mail" id="email">
+        <label for="email" class="login__label">Digite seu e-mail</label>
+      </div>
+      <a href="">Recuperar Senha</a>
+    </section>
+    <div id="footer"></div>
+  </main>
+  <script src="/JS/script.js"></script>
 </body>
 </html>
