@@ -1,0 +1,6 @@
+@import '/Styles-global.css';
+
+.footer__global {
+  background-color: var(--color--black);
+}
+
