@@ -13,14 +13,27 @@
     <div id="header"></div>
     <section class="login__content">
       <h2 class="login__second">Login</h2>
-      <div class="login__box">
-        <input type="text" class="login__input" placeholder="Digite seu e-mail" id="email">
-        <label for="email" class="login__label">Digite seu e-mail</label>
+      <div class="login__container">
+        <div class="login__box">
+          <input type="text" class="login__input" autocomplete="off" placeholder="Digite seu e-mail" id="email">
+          <label for="email" class="login__label">Digite seu e-mail</label>
+        </div>
+        <div class="login__box">
+          <input type="password" class="login__input" placeholder="Digite sua senha" id="senha">
+          <label for="senha" class="login__label">Digite sua senha</label>
+        </div>
+        <input type="submit" value="Entrar" class="login__btn">
       </div>
-      <a href="">Recuperar Senha</a>
+      <!-- ERROR E LOADING -->
+      <!-- <div class="login__errorWrap">
+        <div id="spinner"></div>
+        <p class="login__error">algo deu errado tente novamente</p>
+      </div> -->
+      <a href="/Presentation/Pages/recover-password/recover-password.html" class="login__recorver">Recuperar Senha</a>
     </section>
     <div id="footer"></div>
   </main>
+  <script src="https://kit.fontawesome.com/404da0db7b.js" crossorigin="anonymous"></script>
   <script src="/JS/script.js"></script>
 </body>
 </html>
