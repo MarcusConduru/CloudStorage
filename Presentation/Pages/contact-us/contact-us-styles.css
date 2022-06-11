@@ -1,1 +1,175 @@
 @import '/Styles-global.css';
+
+.contact__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact__content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+
+.contact__section {
+  width: 40rem;
+}
+
+.contact__second {
+  font-size: 3rem;
+  color: var(--color--red);
+  margin-bottom: 3rem;
+}
+
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--color--red-1);
+  color: var(--color--white);
+  padding: 1rem 1.5rem;
+  border-radius: .3rem;
+  font-size: 1.5rem;
+  transition: all .4s ease-in-out;
+}
+
+.contact__label::before,
+.contact__label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease-in-out;
+  z-index: -1;
+}
+
+.contact__label::after {
+  background-color: var(--color--red-1);
+} 
+
+.contact__label::before {
+  background-image: linear-gradient(to bottom, transparent, rgba(3,36,41,.2));
+}
+
+.contact__box:nth-child(2) .contact__input{
+  padding: 1rem .3rem 1rem 7.5rem;
+}
+
+.contact__box:nth-child(3) .contact__input{
+  padding: 1rem .3rem 1rem 7rem;
+}
+
+.contact__box:nth-child(4) .contact__input{
+  padding: 1rem .3rem 1rem 9rem;
+}
+
+.contact__box:nth-child(2) .contact__input:focus,
+.contact__box:nth-child(3) .contact__input:focus,
+.contact__box:nth-child(4) .contact__input:focus {
+  padding-left: 3rem;
+}
+
+.contact__input:focus + .contact__label {
+  transform: rotateZ(-66deg) translate(2rem, -4rem);
+}
+
+.contact__input:focus + .contact__label::before { 
+  transform: translateY(10px) rotate(20deg) ;
+}
+
+.contact__input,
+.contact__textarea {
+  transition: all .3s;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+  border: .1rem solid var(--color--black);
+}
+
+.contact__textarea {
+  width: 100%;
+  min-height: 30rem;
+  padding: .8rem .3rem;
+  resize: none;
+}
+
+.contact__btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: .3rem;
+  border: none;
+  background-color: var(--color--red-1);
+  color: var(--color--white);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.contact__btn:hover {
+  opacity: .7;
+}
+
+.contact__aside {
+  padding-top: 6rem;
+  max-width: 400rem;
+  margin-left: 3rem;
+}
+
+.contanct__info {
+  font-size: 2.4rem;
+}
+
+.contact__us {
+  color: var(--color--red-1);
+  transition: all .3s;
+}
+
+.contact__us:hover {
+  opacity: .7;
+}
+
+.contact__us,
+.contact__address {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.contanct__info,
+.contact__us,
+.contact__address {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .contact__label {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .contact__content {
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__section,
+  .contact__aside {
+    width: 70rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .contact__section,
+  .contact__aside {
+    width: 100%;
+  }
+}

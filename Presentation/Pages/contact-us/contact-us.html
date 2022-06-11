@@ -6,8 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fale Conosco</title>
   <link rel="stylesheet" href="./contact-us-styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Fale Conosco</h1>
+  <main class="contact__wrap">
+    <div id="header"></div>
+    <section class="contact__content">
+      <div class="contact__section">
+        <h2 class="contact__second">Fale Conosco</h2>
+        <div class="contact__box">
+          <input class="contact__input" type="text" id="Nome">
+          <label class="contact__label" for="Nome">Nome</label>
+        </div>
+        <div class="contact__box">
+          <input class="contact__input" type="text" id="Email">
+          <label class="contact__label" for="Email">Email</label>
+        </div>
+        <div class="contact__box">
+          <input class="contact__input" type="text" id="Assunto">
+          <label class="contact__label" for="Assunto">Assunto</label>
+        </div>
+        <textarea class="contact__textarea" placeholder="Mensagem"></textarea>
+        <input type="submit" value="Enviar" class="contact__btn">
+      </div>
+      <div class="contact__aside">
+        <h2 class="contanct__info">Informação de contato</h2>
+        <a href="tel:+5587999999999" class="contact__us">+55 (87) 99999-9999</a>
+        <p class="contact__address">1023 Sheldon Crossroad Apt. 548 - Jacksonville, TX / 57446</p>
+        <a href="mailto:exemplo@hotmail.com.br" class="contact__us">exemplo@hotmail.com.br</a>
+      </div>
+    </section>
+    <div id="footer"></div>
+  </main>
+  <script src="https://kit.fontawesome.com/404da0db7b.js" crossorigin="anonymous"></script>
+  <script src="/JS/script.js"></script>
 </body>
 </html>
