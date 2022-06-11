@@ -31,12 +31,15 @@
 	position: relative;
 }
 
+.login__box:first-child {
+	margin-bottom: 3rem;
+}
+
 .login__input {
 	width: 100%;	
 	padding: 1rem;
 	border: none;
 	border-bottom: 2px solid var(--color--black);
-	margin-bottom: 3rem;
 	position: relative;
 }
 
@@ -49,7 +52,7 @@
 }
 
 .login__input:placeholder-shown + .login__label{
-	transform: translateY(-4.4rem);
+	transform: translateY(2.5rem);
 	opacity: 0;
 	visibility: hidden;
 }
@@ -59,9 +62,9 @@
 	transform: translateY(0);
 	visibility: visible;
 	position: absolute;
-	bottom: 10%;
+	bottom: 100%;
 	left: 2%;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	z-index: 1;
 	transition: all .3s;
 }
@@ -107,6 +110,18 @@
 .login__error {
 	font-size: 1.7rem;
 	color: var(--color--red);
+}
+
+.login__miss {
+	font-size: 1.3rem;
+	color: var(--color--red);
+	padding: .5rem 0rem;
+	display: inline-block;
+	transition: all .2s;
+}
+
+.login__miss:hover {
+	opacity: .6;
 }
 
 @media only screen and (max-width: 32.8125em) {
