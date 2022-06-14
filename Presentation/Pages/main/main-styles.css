@@ -4,7 +4,6 @@ a {
   text-decoration: none !important;
 }
 
-
 .main__wrap {
   min-height: 100vh;
   display: flex;
@@ -16,32 +15,6 @@ a {
   flex-grow: 1;
 }
 
-.main__introduction {
-  border-top: 1rem solid var(--color--red);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.main__panel {
-  display: flex;
-  padding: 10rem 5rem;
-  max-width: 120rem;
-  text-align: justify;
-  font-size: 2.7rem;
-  font-weight: 400;
-  justify-content: flex-start;
-}
-
-.main__panel p {
-  width: 60rem;
-}
-
-.main__heading {
-  font-weight: bold;
-  font-size: 2.6rem;
-}
 
 .main__plans {
   background-color: var(--color--black);
@@ -254,13 +227,6 @@ a {
 
 .main__close {
   color: var(--color--red);
-}
-
-.main__model {
-  position: absolute;
-  z-index: -1;
-  right: 15%;
-  opacity: .4;
 }
 
 .main__info {

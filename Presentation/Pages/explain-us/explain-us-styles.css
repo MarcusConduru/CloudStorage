@@ -1,0 +1,59 @@
+@import '/Styles-global.css';
+
+a {
+  text-decoration: none !important;
+}
+
+.main__wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__introduction {
+  border-top: 1rem solid var(--color--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  
+.main__panel {
+  display: flex;
+  padding: 10rem 5rem;
+  max-width: 120rem;
+  text-align: justify;
+  font-size: 2.7rem;
+  font-weight: 400;
+  justify-content: flex-start;
+}
+  
+.main__panel p {
+  width: 60rem;
+}
+  
+.main__heading {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+
+.main__model {
+  position: absolute;
+  z-index: -1;
+  right: 15%;
+  opacity: .4;
+}
+
+@media only screen and (max-width: 40.625em){
+  .main__model {
+    right: 0; 
+  }
+}
+
+@media only screen and (max-width: 36em){
+  .main__panel p {
+    width: 100%;
+  }
+}
