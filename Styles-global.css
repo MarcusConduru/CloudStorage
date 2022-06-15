@@ -60,7 +60,7 @@ ul {
 }
 
 .header__logo {
-  height: 4rem;
+  height: 6rem;
 }
 
 .header__content {
@@ -202,7 +202,7 @@ ul {
 }
 
 .footer__logo {
-  width: 15rem;
+  width: 25rem;
 }
 
 .footer__aside {
@@ -341,17 +341,17 @@ ul {
   }
 
   .header__item a:hover {
-    color: var(--color--black);
+    color: var(--color--orange);
   }
 
   .header__item:hover {
-    background-color: var(--color--yellow);
+    background-color: var(--color--white);
     opacity: 1;
   }
 
   .header__list {
     align-items: unset;
-    background-color: var(--color--black);
+    background-color: var(--color--blue-dark);
     width: 100%;
     position: absolute;
     display: flex;
