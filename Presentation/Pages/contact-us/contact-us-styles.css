@@ -118,37 +118,6 @@
   opacity: .7;
 }
 
-.contact__aside {
-  padding-top: 6rem;
-  max-width: 400rem;
-  margin-left: 3rem;
-}
-
-.contanct__info {
-  font-size: 2.4rem;
-}
-
-.contact__us {
-  color: var(--color--orange);
-  transition: all .3s;
-}
-
-.contact__us:hover {
-  opacity: .7;
-}
-
-.contact__us,
-.contact__address {
-  font-size: 1.6rem;
-  display: block;
-}
-
-.contanct__info,
-.contact__us,
-.contact__address {
-  margin-bottom: 1rem;
-}
-
 @media only screen and (max-width: 68.75em) {
   .contact__label {
     padding: 1.2rem 1.5rem;
@@ -161,15 +130,13 @@
     align-items: center;
   }
 
-  .contact__section,
-  .contact__aside {
+  .contact__section {
     width: 70rem;
   }
 }
 
 @media only screen and (max-width: 40.625em) {
-  .contact__section,
-  .contact__aside {
+  .contact__section {
     width: 100%;
   }
 }
