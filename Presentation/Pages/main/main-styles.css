@@ -91,6 +91,7 @@ a {
   -moz-perspective: 100rem;
   -webkit-perspective: 100rem;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .main__card--front {

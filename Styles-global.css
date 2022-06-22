@@ -17,6 +17,25 @@
   --color--blue-dark: #040028;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color--white--1);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color--blue-dark);
+  border-radius: 20px;
+  border: 3px solid var(--color--blue-dark);
+}
+
 *::after,
 *::before,
 * {
