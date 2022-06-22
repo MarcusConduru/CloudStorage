@@ -1,0 +1,128 @@
+@import '/Styles-global.css';
+
+.service__wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: var(--color--white--1);
+}
+
+.service__section {
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  padding: 5rem 2rem;
+}
+
+.service__card {
+  min-height: 40rem;
+  width: 26rem;
+  box-shadow: 0px 0px 2px var(--color--black);
+  display: flex;
+  flex-direction: column;
+  margin-right: .1rem;
+}
+
+.service__header {
+  background-color: rgba(4, 0, 40, .7);
+  color: var(--color--white);
+  padding: 0 2rem;
+  padding-top: 1rem;
+  height: 8rem;
+  text-align: center;
+}
+
+.service__second {
+  font-size: 2rem;
+}
+
+.service__third {
+  background-color: var(--color--blue-dark);
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.service__body {
+  background-color: var(--color--white);
+  flex: 1;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.service__list {
+  text-align: center;
+}
+
+.service__item {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service__item:not(:last-child) {
+  border-bottom: .1rem solid var(--color--black);
+}
+
+.service__span {
+  font-weight: bold;
+}
+
+.service__btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: var(--color--blue-dark);
+  cursor: pointer;
+  color: var(--color--white);
+  border-radius: .3rem;
+  margin-bottom: 2rem;
+  transition: all .3s;
+}
+
+.service__btn:hover {
+  opacity: .8;
+}
+
+.service__paragh {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.service__orange {
+  background-color: var(--color--orange) !important;
+}
+
+.service__orange--opacity {
+  background-color: rgba(204, 51, 0, .7) !important;
+}
+
+.service__transform {
+  transform: translateY(-2.5rem);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .service__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .service__transform {
+    transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .service__section {
+    grid-template-columns: 1fr;
+  }
+}
