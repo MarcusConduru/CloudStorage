@@ -238,12 +238,6 @@ ul {
   transition: all .3s;
 }
 
-.footer__network:hover,
-.footer__network:active {
-  opacity: .8;
-  text-decoration: none;
-}
-
 .footer__icon {
   margin-right: .2rem;
 }
