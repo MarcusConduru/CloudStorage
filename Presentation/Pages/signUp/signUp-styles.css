@@ -1,6 +1,6 @@
 @import '/Styles-global.css';
 
-.login__wrap {
+.signup__wrap {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -8,9 +8,9 @@
 	background-color: var(--color--white--1);
 }
 
-.login__content {
+.signup__content {
 	width: 50rem;
-	min-height: 40rem;
+	min-height: 50rem;
 	box-shadow: 0rem 0rem .3rem var(--color--black);
 	background-color: var(--color--white);
 	border-radius: .3rem;
@@ -22,21 +22,22 @@
 	justify-content: space-between;
 }
 
-.login__second {
+.signup__second {
 	font-size: 2.2rem;
-	margin-bottom: 3rem;
 	color: var(--color--orange);
+	margin-bottom: 3rem;
 }
 
-.login__box {
+.signup__box {
 	position: relative;
 }
 
-.login__box:first-child {
+.signup__box:not(:nth-child(4)) {
 	margin-bottom: 3rem;
+	
 }
 
-.login__input {
+.signup__input {
 	width: 100%;	
 	padding: 1rem;
 	border: none;
@@ -44,21 +45,21 @@
 	position: relative;
 }
 
-.login__input::-webkit-input-placeholder {
+.signup__input::-webkit-input-placeholder {
 	font-size: 1.6rem;
 }
 
-.login__input:focus {
+.signup__input:focus {
 	outline: none;	
 }
 
-.login__input:placeholder-shown + .login__label{
+.signup__input:placeholder-shown + .signup__label{
 	transform: translateY(2.5rem);
 	opacity: 0;
 	visibility: hidden;
 }
 
-.login__label {
+.signup__label {
 	opacity: 1;
 	transform: translateY(0);
 	visibility: visible;
@@ -70,64 +71,56 @@
 	transition: all .3s;
 }
 
-.login__recorver {
+.signup__recorver {
 	color: var(--color--black);
 	text-decoration: underline;
 	font-size: 1.6rem;
 	transition: all .2s;
 }
 
-.login__recorver:hover {
+.signup__recorver:hover {
 	opacity: .6;
 }
 
-.login__btn {
+.signup__btn {
 	width: 100%;
 	margin-top: 1rem;
 	padding: 1rem;
 	border-radius: .3rem;
 	cursor: pointer;
 	border: none;
-	font-size: 1.6rem;
 	background-color: var(--color--orange);
 	color: var(--color--white);
+	font-size: 1.6rem;
 	transition: all .3s;
 }
 
-.login__btn:hover {
+.signup__btn:hover {
 	opacity: .7;
 }
 
-.login__container {
+.signup__container {
 	width: 100%;	
 }
 
-.login__errorWrap {
+.signup__errorWrap {
 	padding: 2rem 0;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 
-.login__error {
+.signup__error {
 	font-size: 1.7rem;
 	color: var(--color--orange);
 }
 
-.login__miss {
-	font-size: 1.3rem;
-	color: var(--color--orange);
-	padding: .5rem 0rem;
-	display: inline-block;
-	transition: all .2s;
-}
-
-.login__miss:hover {
-	color: var(--color--black);
+.signup__icon {
+	font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 32.8125em) {
-	.login__content {
+	.signup__content {
 		width: 100%;
 	}
 }

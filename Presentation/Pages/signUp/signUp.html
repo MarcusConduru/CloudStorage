@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta</title>
+  <link rel="stylesheet" href="./signUp-styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main class="signup__wrap">
+    <div id="header"></div>
+    <section class="signup__content">
+      <h2 class="signup__second">Criar Conta</h2>
+      <div class="signup__container">
+        <div class="signup__box">
+          <input type="text" class="signup__input" autocomplete="off" placeholder="Digite seu Nome" id="name">
+          <label for="name" class="signup__label">Digite seu Nome</label>
+        </div>
+        <div class="signup__box">
+          <input type="email" class="signup__input" placeholder="Digite seu e-mail" id="email">
+          <label for="email" class="signup__label">Digite seu e-mail</label>
+        </div>
+        <div class="signup__box">
+          <input type="password" class="signup__input" placeholder="Digite sua senha" id="password">
+          <label for="password" class="signup__label">Digite sua senha</label>
+        </div>
+        <div class="signup__box">
+          <input type="password" class="signup__input" placeholder="Confirme sua senha" id="passwordConfirm">
+          <label for="passwordConfirm" class="signup__label">Confirme sua senha</label>
+        </div>
+        <input type="submit" value="Cadastrar" class="signup__btn">
+      </div>
+      <a href="/Presentation/Pages/login/login.html" class="signup__recorver"><i class="fa-solid fa-reply signup__icon"></i> Voltar</a>
+      <!-- ERROR E LOADING -->
+      <!-- <div class="signup__errorWrap">
+        <div id="spinner"></div>
+        <p class="signup__error">algo deu errado tente novamente</p>
+      </div> -->
+    </section>
+    <div id="footer"></div>
+  </main>
+  <script src="https://kit.fontawesome.com/404da0db7b.js" crossorigin="anonymous"></script>
+  <script src="/JS/script.js"></script>
+</body>
+</html>
