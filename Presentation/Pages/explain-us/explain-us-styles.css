@@ -20,7 +20,6 @@ a {
   flex-grow: 1;
 }
 
-  
 .main__panel {
   display: flex;
   padding: 10rem 5rem;
@@ -44,7 +43,8 @@ a {
   position: absolute;
   z-index: -1;
   right: 15%;
-  opacity: .4;
+  opacity: .3;
+  width: 60rem;
 }
 
 @media only screen and (max-width: 40.625em){

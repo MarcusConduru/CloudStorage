@@ -1,14 +1,11 @@
 @import '/Styles-global.css';
 
-a {
-  text-decoration: none !important;
-}
-
 .main__wrap {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--color--white--1);
 }
 
 .main__content {
@@ -61,7 +58,6 @@ a {
   padding: .5rem;
 }
 
-
 .main__offers {
   display: flex;
   flex-direction: column;
@@ -86,46 +82,19 @@ a {
 }
 
 .main__card {
-  height: 55rem;
-  perspective: 100rem;
-  -moz-perspective: 100rem;
-  -webkit-perspective: 100rem;
+  padding-bottom: 3rem;
+  border-radius: 3rem;
   position: relative;
-  margin-bottom: 5rem;
-}
-
-.main__card--front {
-  background-color: var(--color--white);
-}
-
-.main__card--back {
-  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(180deg);
+  background-color: var(--color--white);
 }
-
-.main__card:hover .main__card--front {
-  transform: rotateY(-180deg);
-}
-
-.main__card:hover .main__card--back {
-  transform: rotateY(0);
-}
-
-.main__card--back,
-.main__card--front {
-  box-shadow: 0rem 0rem 5rem var(--color--gray);
-  transition: all .5s;
-  top: 0;
-  left: 0;
-  border-radius: 3rem;
-  position: absolute;
-  width: 100%;
-  min-height: 55rem;
-  backface-visibility: hidden;
+.main__separation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__wave {
@@ -148,11 +117,9 @@ a {
   top: 50%;
 }
 
-.main__container {
-  padding: 2rem;
-}
-
 .main__third {
+  z-index: 1;
+  color: var(--color--white);
   text-align: center;
   font-size: 4.5rem;
   color: var(--color--gray--1);
@@ -164,6 +131,7 @@ a {
  text-align: center;
  font-size: 1.4rem;
  margin-top: 1rem;
+ align-self: center;
  color: var(--color--white);
  padding: .2rem;
  border-radius: .3rem;
@@ -185,14 +153,7 @@ a {
   background-color: var(--color--yellow);
 }
 
-.main__card--front {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .main__container {
-  flex-grow: 1;
   width: 100%;
   text-align: center;
   display: flex;
@@ -202,7 +163,6 @@ a {
 .main__list {
   margin-top: 1rem;
   width: 85%;
-  height: 100%;
 }
 
 .main__item {
@@ -230,29 +190,32 @@ a {
 }
 
 .main__info {
-  flex-grow: 1;
   text-align: center;
-  color: var(--color--white);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   align-items: center;
   display: flex;
+  padding: 0 2rem;
 }
 
 .main__btn {
   background-color: var(--color--red);
   border: none;
+  margin: .5rem 0;
   color: var(--color--white);
-  padding: .7rem;
+  padding: 1rem;
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, .4);
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, .4);
   transition: all .3s;
   border-radius: .3rem;
+  font-weight: 100;
 }
 
 .main__btn:hover {
-  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, .4);
+  box-shadow: 0rem 1.5rem 1rem rgba(0, 0, 0, .4);
   transform: translateY(-.6rem);
+  color: var(--color--white);
   background-color: var(--color--red-light);
 }
 
@@ -261,107 +224,17 @@ a {
   transform: translateY(.2rem);
 }
 
-.slick-prev  {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.slick-arrow {
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.main__Referent {
-  margin: auto;
-  width: 80rem;
-  overflow: hidden;
-}
-
-.main__frequent {
-  overflow: hidden;
-  max-width: 120rem;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  padding: 5rem;
-}
-
-.main__question {
-  display: flex;
-  margin: 5rem auto;
-  width: 60rem;
-  border: .1rem solid var(--color--gray);
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  border-radius: 3rem;
-}
-
-.main__question:not(:last-child) {
-  margin-right: 3rem;
-}
-
-.main__ask {
-  margin-left: 2rem;
-  text-align: justify;
-}
-
-.main__break {
-  
-}
-
-.main__asking {
-  font-size: 1.5rem;
-}
-
-.main__name {
-  font-size: 1.6rem;
-}
-
-.main__red--paragh {
-  color: var(--color--red);
-}
-
-.main__green--paragh {
-  color: var(--color--green);
-}
-
-.main__left,
-.main__right {
-  background-color: var(--color--black);
-  width: 5rem !important;
-  height: 5rem;
-  margin: auto;
-}
-
-.main__feedback {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
-}
-
-
 @media only screen and (max-width: 78.75em){
   .main__box {
     grid-template-columns: repeat(2, 27rem);
   }
-}
 
-@media only screen and (max-width: 49.375em){
-  .main__Referent {
-    width: 100%;
-    overflow: hidden;
+  .main__card {
+    margin-bottom: 3rem;
   }
 }
 
 @media only screen and (max-width: 40.625em){
-  .main__question {
-    width: 80%;
-  }
-
-  
   .main__model {
     right: 0; 
   }

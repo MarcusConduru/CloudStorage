@@ -71,7 +71,7 @@ ul {
 /* HEADER */
 .header__global {
   background-color: var(--color--blue-dark);
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,7 @@ ul {
 }
 
 .header__logo {
-  height: 6rem;
+  height: 5rem;
 }
 
 .header__content {
