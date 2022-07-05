@@ -127,9 +127,13 @@ a {
 }
 
 .main__Referent {
-  margin: auto;
-  width: 80rem;
-  overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.main__img {
+	width: 35rem;
 }
 
 .main__feedback {
