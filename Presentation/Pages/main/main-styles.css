@@ -170,6 +170,7 @@
   font-size: 1.5rem;
   padding: 1rem;
   border-radius: .3rem;
+  font-family: 'lato', sans-serif !important;
 }
 
 .main__item:nth-child(odd) {
@@ -196,6 +197,7 @@
   align-items: center;
   display: flex;
   padding: 0 2rem;
+  font-family: 'lato', sans-serif !important;
 }
 
 .main__btn {
