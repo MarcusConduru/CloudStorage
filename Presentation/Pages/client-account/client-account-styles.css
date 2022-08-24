@@ -1,7 +1,11 @@
 @import '/Styles-global.css';
 
+a {
+  text-decoration: none !important;
+}
+
 .account__wrap {
-  height: 100vh;
+  min-height: calc(100vh - 256px);
   display: flex;
   flex-direction: column;
   background-color: var(--color--white--1);
@@ -61,11 +65,11 @@
 
 .account__left,
 .account__right {
-  background-color: var(--color--blue-dark);
-  padding: 2rem;
+  background-color: var(--color--blue-dark) !important;
+  height: 6rem;
+  width: 6rem !important;
   border-radius: 50%;
-  font-size: .1rem;
-  position: absolute;
+  top: 100% !important;
 }
 
 .account__right {
@@ -113,6 +117,11 @@
 }
 
 @media screen and (max-width: 56.25em) {
+
+  .account__section {
+    margin-bottom: 5rem;
+  }
+
   .account__table {
     margin-bottom: 0;
     background-color: transparent;

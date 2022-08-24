@@ -5,7 +5,7 @@ a {
 }
 
 .doubt__wrap {
-	min-height: 100vh;
+	min-height: calc(100vh - 256px);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -170,7 +170,6 @@ a {
 }
 
 .main__ask {
-  margin-left: 2rem;
   text-align: justify;
 }
 
@@ -190,7 +189,7 @@ a {
 
 .main__left,
 .main__right {
-  background-color: var(--color--black);
+  background-color: var(--color--black) !important;
   width: 5rem !important;
   height: 5rem;
   margin: auto;
