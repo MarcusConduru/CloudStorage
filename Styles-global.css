@@ -115,9 +115,13 @@ ul {
   z-index: 100;
 }
 
-.header__item {
+.header__item,
+.header__item--drop {
   font-size: 1.8rem;
   margin-right: 2rem;
+  position: relative;
+  color: var(--color--white);
+  cursor: pointer;
 }
 
 .header__services:visited,
@@ -184,6 +188,42 @@ ul {
   font-size: 2rem;
   opacity: 0;
   visibility: hidden;
+}
+
+.header__arrow {
+  color: var(--color--white);
+  padding: .4rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: .5rem;
+  transition: .2s;
+}
+
+.header__drop {
+  position: absolute;
+  
+  width: 100%;
+  left: 0;
+  margin-top: 1rem;
+}
+
+.header__option:link,
+.header__option:visited {
+  display: block;
+  font-size: 1.3rem;
+  padding: 2rem 1.5rem;
+  background-color: var(--color--white);
+  transition: all .3s;
+  color: var(--color--black);
+}
+
+.header__option:hover {
+  background-color: var(--color--orange);
+  color: var(--color--white);
+}
+
+.header__none {
+  display: none;
 }
 
 /* FOOTER */
@@ -371,21 +411,25 @@ ul {
   }
 
   
-.header__services:hover .header__icon {
-  color: var(--color--white);
-}
+  .header__services:hover .header__icon {
+    color: var(--color--white);
+  }
 
-  .header__item a {
+  .header__item a,
+  .header__item--drop {
     display: inline-block;
     width: 100%;
     padding: 1rem;
   }
 
-  .header__item a:hover {
+  .header__item a:hover,
+  .header__item--drop:hover .header__arrow,
+  .header__item--drop:hover {
     color: var(--color--orange);
   }
 
-  .header__item:hover {
+  .header__item:hover,
+  .header__item--drop:hover {
     background-color: var(--color--white);
     opacity: 1;
   }
