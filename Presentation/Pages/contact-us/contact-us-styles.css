@@ -78,15 +78,15 @@
 } */
 
 .contact__box:nth-child(2) .contact__input{
-  padding: 1rem .3rem 1rem 7.5rem;
+  padding: 1rem .3rem 1rem 8.1rem;
 }
 
 .contact__box:nth-child(3) .contact__input{
-  padding: 1rem .3rem 1rem 7rem;
+  padding: 1rem .3rem 1rem 8.4rem;
 }
 
 .contact__box:nth-child(4) .contact__input{
-  padding: 1rem .3rem 1rem 9rem;
+  padding: 1rem .3rem 1rem 11.3rem;
 }
 
 .contact__input,
@@ -100,7 +100,7 @@
 .contact__textarea {
   width: 100%;
   min-height: 30rem;
-  padding: .8rem .3rem;
+  padding: .9rem .5rem;
   resize: none;
 }
 
@@ -123,6 +123,18 @@
 @media only screen and (max-width: 68.75em) {
   .contact__label {
     padding: 1.2rem 1.5rem;
+  }
+
+  .contact__box:nth-child(2) .contact__input{
+    padding: 1rem .3rem 1rem 8.6rem;
+  }
+  
+  .contact__box:nth-child(3) .contact__input{
+    padding: 1rem .3rem 1rem 8.8rem;
+  }
+  
+  .contact__box:nth-child(4) .contact__input{
+    padding: 1rem .3rem 1rem 12rem;
   }
 
   .contact__content {
