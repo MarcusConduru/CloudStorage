@@ -22,6 +22,10 @@
 	justify-content: space-between;
 }
 
+.login__content .login__box:nth-child(2) .login__input {
+	padding-right: 5rem;
+}
+
 .login__second {
 	font-size: 2.5rem;
 	margin-bottom: 3rem;
@@ -124,6 +128,20 @@
 
 .login__miss:hover {
 	color: var(--color--black);
+}
+
+.login__show {
+	position: absolute;
+	right: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 1rem;
+	transition: all .3s;
+}
+
+.login__show:hover {
+	opacity: .6;
 }
 
 @media only screen and (max-width: 32.8125em) {

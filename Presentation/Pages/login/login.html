@@ -21,8 +21,9 @@
         <div class="login__box">
           <input type="password" class="login__input" placeholder="Digite sua senha" id="senha">
           <label for="senha" class="login__label">Digite sua senha</label>
-          <a class="login__miss" href="/Presentation/Pages/recover-password/recover-password.html">Esqueceu sua senha?</a>
+          <button class="login__show" type="button" onclick="mostrarSenha()"><i id="show" class="fa-solid fa-eye-slash login__icon"></i></button>
         </div>
+        <a class="login__miss" href="/Presentation/Pages/recover-password/recover-password.html">Esqueceu sua senha?</a>
         <input type="submit" value="Entrar" class="login__btn">
       </div>
       <a href="/Presentation/Pages/signUp/signUp.html" class="login__recorver">Criar Conta</a>

@@ -8,3 +8,35 @@ $('.main__gallery').slick({
   autoplay: true,
   autoplaySpeed: 2000,
 })
+
+function mostrarSenha() {
+  let tipo = document.getElementById("senha")
+  let mostrar = document.getElementById("show")
+  if (tipo.type === 'password' ) {
+    tipo.type = 'text'
+    mostrar.classList.remove('fa-eye-slash')
+    mostrar.classList.add('fa-eye')
+  } else {
+    tipo.type = 'password'
+    mostrar.classList.remove('fa-eye')
+    mostrar.classList.add('fa-eye-slash')
+  }
+}
+
+function mostrarConfirmarSenha() {
+  let tipo = document.getElementById("confirmeSenha")
+  let mostrar = document.getElementById("confirmShow")
+  if (tipo.type === 'password' ) {
+    tipo.type = 'text'
+    mostrar.classList.remove('fa-eye-slash')
+    mostrar.classList.add('fa-eye')
+  } else {
+    tipo.type = 'password'
+    mostrar.classList.remove('fa-eye')
+    mostrar.classList.add('fa-eye-slash')
+  }
+}
+
+function Dropdown() {
+  document.getElementById("dropdown").classList.toggle('header__none')
+}

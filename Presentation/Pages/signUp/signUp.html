@@ -23,12 +23,14 @@
           <label for="email" class="signup__label">Digite seu e-mail</label>
         </div>
         <div class="signup__box">
-          <input type="password" class="signup__input" placeholder="Digite sua senha" id="password">
+          <input type="password" class="signup__input" placeholder="Digite sua senha" id="senha">
           <label for="password" class="signup__label">Digite sua senha</label>
+          <button class="signup__show" type="button" onclick="mostrarSenha()"><i id="show" class="fa-solid fa-eye-slash signup__icon"></i></button>
         </div>
         <div class="signup__box">
-          <input type="password" class="signup__input" placeholder="Confirme sua senha" id="passwordConfirm">
+          <input type="password" class="signup__input" placeholder="Confirme sua senha" id="confirmeSenha">
           <label for="passwordConfirm" class="signup__label">Confirme sua senha</label>
+          <button class="signup__show" type="button" onclick="mostrarConfirmarSenha()"><i id="confirmShow" class="fa-solid fa-eye-slash signup__icon"></i></button>
         </div>
         <input type="submit" value="Cadastrar" class="signup__btn">
       </div>
