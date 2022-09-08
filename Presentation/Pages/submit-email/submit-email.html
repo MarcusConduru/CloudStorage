@@ -5,38 +5,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enviar email</title>
-  <link rel="stylesheet" href="./submit-email-styles.css">
+  <style>
+    body { font-family: sans-serif }
+    h2 { text-align: center }
+    a { text-decoration: none }
+    p, h5, h2 { margin: 0 }
+
+    main {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 0px 2px black;
+    }
+
+    section {
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      line-height: 2rem;
+    }
+
+    .btn {
+      align-self: center;
+      padding: 15px;
+      border-radius: 200px;
+      margin: 20px 0;
+      font-size: 18px;
+      background-color: #cc3300;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <main class="submit__wrap">
-    <header class="submit__header">Recuperação de senha</header>
-    <section class="submit__section">
-      <p class="submit__title">Olá, marcus vinicius! Tudo bem?</p>
-      <p class="submit__paragh">Você recebeu esta mensagem porque requisitou recuperar sua senha no Hagna.</p>
-      <p class="submit__paragh">Clique no link abaixo para criar uma nova senha de acesso:</p>
-      <a href="" class="submit__btn">Criar uma nova senha</a>
-      <p class="submit__paragh">Se você não fez este pedido, por favor, ignore este e-mail.</p>
-    </section>
-    <footer class="submit__footer">
-      <div class="submit__content">
-        <div class="submit__box">
-          <p class="submit__info">Favor não responder a este email. Está é uma mensagem.</p>
-          <p class="submit__info">A Hagna backup em nuvem agradece a compreensão</p>
-        </div>
-        <div class="submit__box">
-          <p class="submit__accompany">Acompanhe nossas redes sociais:</p>
-          <div class="submit__network">
-            <a href="" class="submit__link">
-              <i class="fa-brands fa-instagram submit__icon"></i>
-            </a>
-            <a href="" class="submit__link">
-              <i class="fa-brands fa-facebook-square submit__icon"></i>
-            </a>
-          </div>
+  <main>
+    <section>
+      <h2>Recuperação de senha</h2>
+      <h4>Olá, marcus vinicius! Tudo bem?</h4>
+      <p>Você recebeu esta mensagem porque requisitou recuperar sua senha no Hagna.</p>
+      <p>Clique no link abaixo para criar uma nova senha de acesso:</p>
+      <a href="" class="btn">Criar uma nova senha</a>
+      <p>Se você não fez este pedido, por favor, ignore este e-mail.</p>
+      <a href="" class="btn">Nova senha</a>
+      <div style="display: flex;">
+        <p style="margin-right: 5px;">Acompanhe nossas redes sociais:</p>
+        <div>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-brands fa-facebook-square"></i>
+          </a>
         </div>
       </div>
-      <img class="submit__img" src="/img/logo.jpg" alt="logo">
-    </footer>
+      <h5>Favor não responder a este email. Está é uma mensagem.</h5>
+      <h5>A Hagna backup em nuvem agradece a compreensão</h5>
+    </section>
+    <img src="/img/logo.jpg" alt="logo">
   </main>
   <script src="https://kit.fontawesome.com/404da0db7b.js" crossorigin="anonymous"></script>
 </body>
