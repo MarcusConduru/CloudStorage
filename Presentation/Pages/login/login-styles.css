@@ -106,11 +106,9 @@
 	width: 100%;	
 }
 
+/* ALTERADO */
 .login__errorWrap {
-	padding: 2rem 0;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+	margin-top: 2rem;
 }
 
 .login__error {
